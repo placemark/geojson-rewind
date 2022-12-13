@@ -1,5 +1,11 @@
 import { Feature, Geometry, FeatureCollection, Position } from 'geojson';
 
+/**
+ * Winding order. By default, this uses the RFC7946 order,
+ * which is what is in the GeoJSON standard.
+ *
+ * You can also choose to wind in the d3 order.
+ */
 export type Winding = 'RFC7946' | 'd3';
 
 export function rewindGeometry(geometry: Geometry, outer = false): Geometry {
@@ -64,7 +70,7 @@ function rewindRing(ring: Position[], dir: boolean): Position[] {
 }
 
 /**
- * # Wind the rings of polygons.
+ * # Wind the rings of polygons and multipolygons.
  *
  * This creates a copy of the input.
  *

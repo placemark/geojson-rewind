@@ -7,6 +7,7 @@
   "license": "MIT",
   "main": "dist/rewind.cjs",
   "module": "dist/rewind.es.mjs",
+  "browser": "dist/rewind.umd.js",
   "typings": "dist/index.d.ts",
   "exports": {
     "require": "./dist/rewind.cjs",

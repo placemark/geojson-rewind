@@ -38,7 +38,7 @@ export default [
     output: {
       file: 'dist/rewind.umd.js',
       format: 'umd',
-      name: 'toGeoJSON',
+      name: 'rewind',
       sourcemap,
     },
     plugins: [typescript(), nodeResolve(), terser()],
