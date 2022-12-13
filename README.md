@@ -8,7 +8,7 @@ Fix the winding order of rings in GeoJSON.
 
 This package is [`@placemarkio/geojson-rewind`](https://www.npmjs.com/package/@placemarkio/geojson-rewind)
 
-## [📕 API Documentation](https://github.com/placemark/geojson-rewind.git)
+## [📕 API Documentation](https://placemark.github.io/geojson-rewind/)
 
 ## Lineage
 
