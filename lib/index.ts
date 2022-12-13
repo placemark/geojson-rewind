@@ -1,4 +1,11 @@
-import { Feature, Geometry, FeatureCollection, Position } from 'geojson';
+import {
+  Feature as IFeature,
+  Geometry,
+  FeatureCollection,
+  Position,
+} from 'geojson';
+
+type Feature = IFeature<Geometry | null>;
 
 /**
  * Winding order. By default, this uses the RFC7946 order,
